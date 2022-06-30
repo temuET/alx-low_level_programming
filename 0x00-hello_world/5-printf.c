@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+*main - Entry points
+*Return: alwas 0 (success)
+*/
 int main(void)
 {
 
