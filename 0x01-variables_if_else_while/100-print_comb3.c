@@ -7,16 +7,19 @@ int main(void)
 {
 	int x, y;
 
-	for (x = 48; x <= 57; x++)
+	for (x = 48; x <= 56; x++)
 	{
 		for (y = 49; y <= 57; y++)
 		{
-			putchar(x);
-			putchar(y);
-			if (x != 57 || y != 57)
+			if (y > x)
 			{
-				putchar(44);
-				putchar(32);
+				putchar(x);
+				putchar(y);
+				if (x != 56 || y != 57)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}

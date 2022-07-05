@@ -17,7 +17,7 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf("%d is positve\n", n);
+		printf("%d is positve\n ", n);
 	}
 	if (n == 0)
 	{
