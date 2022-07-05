@@ -1,23 +1,30 @@
 #include <stdio.h>
 /**
 *main - entry point
-*Return: alway 0
+*Return: always 0 (Success)
 */
 int main(void)
 {
 	int x, y;
 
-	for (x = 48; x <= 57; x++)
+	for (x = 0; x <= 99; x++)
 	{
-		for (y = 48; y <= 57; y++)
+		for (y = 0; y <= 99; y++)
 		{
-			putchar(x);
-			putchar(y);
-			putchar(32);
+			if (x < y)
+			{
+				putchar(x / 10 + 48);
+				putchar(x % 10 + 48);
+				putchar(32);
+				putchar(y / 10 + 48);
+				putchar(y % 10 + 48);
+				if (x != 98 || y != 99)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
 		}
-
-		putchar(32);
-		putchar(44);
 	}
 	putchar(10);
 	return (0);
