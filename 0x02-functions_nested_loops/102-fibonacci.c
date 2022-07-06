@@ -11,7 +11,14 @@ int main(void)
 	b = 2;
 	for (i = 0; i < 50; i++)
 	{
-		printf("%d, ", a);
+		if (b != 20365011074)
+		{
+			printf("%1d, ", a);
+		}
+		else
+		{
+			printf("%1d\n", a);
+		}
 		c = a + b;
 		a = b;
 		b = c;
