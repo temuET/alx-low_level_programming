@@ -17,3 +17,6 @@ Write a function that prints the numbers, from 0 to 9, followed by a new line.
 
 ## The shortest distance between two points is a straight line
 Write a function that draws a straight line in the terminal.
+
+## I feel like I am diagonally parked in a parallel universe
+Write a function that draws a diagonal line on the terminal.
