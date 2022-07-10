@@ -5,17 +5,20 @@
 */
 int main(void)
 {
-	int a, b, c, i;
+	int i;
+	unsigned long a, b, c;
 
 	a = 1;
 	b = 2;
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 50; ++i)
 	{
-		printf("%1d, ", a);
 		c = a + b;
+		printf("%lu, ", a);
 		a = b;
 		b = c;
+
 	}
 	printf("\n");
+
 	return (0);
 }
