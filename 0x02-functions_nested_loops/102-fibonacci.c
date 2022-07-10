@@ -13,12 +13,20 @@ int main(void)
 	for (i = 0; i < 50; ++i)
 	{
 		c = a + b;
-		printf("%lu, ", a);
+		printf("%lu", a);
 		a = b;
 		b = c;
 
+		if (i == 49)
+		{
+			printf("\n");
+		}
+		else
+		{
+			printf(" , ");
+		}
+
 	}
-	printf("\n");
 
 	return (0);
 }
