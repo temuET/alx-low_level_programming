@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-*
-*
+*rev_string - print the revers of a string
+*@s: pointer points to char parameter
 */
 
 void rev_string(char *s)
