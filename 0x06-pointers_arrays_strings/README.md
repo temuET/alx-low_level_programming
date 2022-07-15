@@ -7,4 +7,7 @@
 1. Write a function that concatenates two strings, using strncat.
 
 ## strncpy ##
-2. Write a function that copies a string, using strncy
+2. Write a function that copies a string, using strncy.
+
+## strcmp ##
+3. Write a function that compares two strings, by using strcmp.
