@@ -3,6 +3,8 @@
 
 /**
 *main - entery point to the program
+*@argc: arg counter
+*@argv: arg array
 *Return: 0
 */
 
