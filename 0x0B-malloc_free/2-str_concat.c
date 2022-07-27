@@ -11,7 +11,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *strp;
-	int i, j, count, d;
+	int i, j, a, b;
 
 	if (s1 == NULL)
 	{
@@ -22,32 +22,32 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	for (i = 0; s1[i] != '\0'; i++)
+	for (a = 0; s1[a] != '\0'; a++)
 	{
 		;
 	}
-	for (j = 0; s2[j] != '\0'; j++)
+	for (b = 0; s2[b] != '\0'; b++)
 	{
 		;
 	}
 
-	strp = malloc((i * sizeof(char)) + (j * sizeof(char)) + 1);
+	strp = malloc((a * sizeof(char)) + ((b + 1) * sizeof(char)));
 
 	if (strp == NULL)
 	{
 		return (NULL);
 	}
 
-	for (count = 0, d = 0; count < (i + j + 1); count++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		if (count < i)
-		{
-			strp[count] = s1[count];
-		}
-		else
-		{
-			strp[count] = s2[d++];
-		}
+		strp[i] = s1[i];
 	}
+	for (j = 0; s2[j] != '\0'; j++)
+	{
+		strp[i] = s2[j];
+		i++;
+	}
+	strp[i] = '\0';
+
 	return (strp);
 }
