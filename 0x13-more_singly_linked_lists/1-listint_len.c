@@ -1,6 +1,5 @@
-#include "lists.h"
 #include <stdio.h>
-#include <stdlib.h>
+#include "lists.h"
 
 /**
 *listint_len - print number of elements
